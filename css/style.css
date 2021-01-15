@@ -92,6 +92,16 @@ ul {
   width: 320px;
 }
 
+.page-privacy
+ {
+   width: 320px;
+ }
+
+.page-privacy__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .block-description__conteiner {
   position: relative;
   background-image: url(../img/desc.jpg);
@@ -100,6 +110,7 @@ ul {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
+  min-height: 400px;
   padding: 10px 20px;
 }
 
@@ -125,6 +136,10 @@ ul {
   text-align: center;
   color: #a9ca2e;
   padding: 20px 0;
+}
+
+.page-footer__privacy {
+  color: blue;
 }
 
 .page-footer__nav-logo-link {
@@ -344,6 +359,11 @@ ul {
     border: none;
   }
 
+  .page-privacy
+ {
+   width: 100%;
+ }
+
   .page-header {
     width: 100%;
   }
@@ -420,6 +440,22 @@ ul {
   .product-banner__heading {
     font-size: 55px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .product-banner__heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .block-description__heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .block-description__desc {
+    font-size: 24px;
   }
 }
 
