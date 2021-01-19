@@ -154,13 +154,13 @@ ul {
 .page-header__nav-button {
   width: 30px;
   height: 30px;
-  border: none;
   background: url(../img/open-img.svg) #ffffff center no-repeat;
+  border: none;
+  padding: 0;
   color: #a9ca2e;
   position: absolute;
   top: 17px;
   right: 35px;
-  padding: 0;
 }
 
 .button-open {
@@ -459,7 +459,53 @@ ul {
   }
 }
 
+.modal {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid grey;
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  overflow-y: scroll;
+  margin: 0 auto;
+  z-index: 5;
+  animation: modalUp 0.5s ease-in-out forwards;
+  box-shadow: black 0 0 20px 1px;
+}
+
+.modal-box {
+  padding: 10px 30px 10px 10px;
+}
+
+.modal-box__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/close-img.svg) #ffffff center no-repeat;
+    border: none;
+    padding: 0;
+}
+
+.content-show {
+  display: block;
+}
+
 /* Animation/ */
+
+@keyframes modalUp{
+  0% {
+      transform:  translateY(-800px);
+  }
+
+  100% {
+    transform:  translateY(0);
+  }
+}
 
 @keyframes textUp{
   0% {
@@ -497,4 +543,20 @@ ul {
 
 .product__product-card {
   animation: opacity 1s ease-in-out forwards;
+}
+
+/* Стили для скролла */
+
+::-webkit-scrollbar-track {
+  opacity: 1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#b2d430;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+::-webkit-scrollbar {
+  width: 10px
 }
