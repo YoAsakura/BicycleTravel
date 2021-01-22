@@ -1,0 +1,45 @@
+{
+  "name": "bicycletravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoAsakura/BicycleTravel.git"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 9",
+    "Firefox ESR"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoAsakura/BicycleTravel/issues"
+  },
+  "homepage": "https://github.com/YoAsakura/BicycleTravel#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "posthtml-include": "^1.6.0"
+  }
+}
