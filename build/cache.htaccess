@@ -1,16 +1,20 @@
 <ifModule mod_expires.c>
+
  ExpiresActive On
  #кэшировать флэш и изображения на одну неделю
- ExpiresByType img/x-icon "access plus 7 days"
- ExpiresByType img/jpeg "access plus 7 days"
- ExpiresByType img/png "access plus 7 days"
- ExpiresByType img/gif "access plus 7 days"
- ExpiresByType img/webp "access plus 7 days"
+ ExpiresByType image/x-icon "access plus 7 days"
+ ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType image/jpg "access plus 7 days"
+    ExpiresByType image/png "access plus 7 days"
+ ExpiresByType image/png "access plus 7 days"
+ ExpiresByType image/gif "access plus 7 days"
+  ExpiresByType image/webp "access plus 7 days"
+ ExpiresByType application/x-shockwave-flash "access plus 7 days"
  #кэшировать css, javascript и текстовые файлы на одну неделю
- ExpiresByType css/ "access plus 7 days"
- ExpiresByType javascript/ "access plus 7 days"
- ExpiresByType javascript/ "access plus 7 days"
- ExpiresByType x-javascript/ "access plus 7 days"
+ ExpiresByType text/css "access plus 7 days"
+ ExpiresByType text/javascript "access plus 7 days"
+ ExpiresByType application/javascript "access plus 7 days"
+ ExpiresByType application/x-javascript "access plus 7 days"
  #кэшировать html и htm файлы на один день
- ExpiresByType .html "access plus 1 day"
+ ExpiresByType text/html "access plus 1 day"
 </ifModule>
